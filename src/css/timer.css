@@ -1,0 +1,42 @@
+.js-style {
+  border-radius: 4px;
+  width: 280px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #4e75ff;
+  padding: 8px 16px;
+  margin-right: 8px;
+  margin-bottom: 32px;
+}
+.js-style::placeholder {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+button[data-start] {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+
+  border-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+}
+button[data-start]:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+.js-style:disabled {
+  border: 1px solid #808080;
+  cursor: default;
+}
