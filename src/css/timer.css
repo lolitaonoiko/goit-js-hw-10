@@ -1,23 +1,4 @@
-.js-style {
-  border-radius: 4px;
-  width: 280px;
-  height: 40px;
-  outline: none;
-  border: 1px solid #4e75ff;
-  padding: 8px 16px;
-  margin-right: 8px;
-  margin-bottom: 32px;
-}
-.js-style::placeholder {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #2e2f42;
-}
 button[data-start] {
-  font-family: 'Montserrat', sans-serif;
   border-radius: 8px;
   padding: 8px 16px;
   width: 75px;
@@ -35,8 +16,66 @@ button[data-start] {
 button[data-start]:disabled {
   background-color: #aaa;
   cursor: not-allowed;
+  color: #989898;
 }
-.js-style:disabled {
+button[data-start]:hover {
+  background-color: #6c8cff;
+}
+button[data-start]:disabled:hover {
+  background-color: #808080;
+}
+
+input {
+  /* outline: none; */
+  gap: 8px;
+  width: 272px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 8px 16px;
   border: 1px solid #808080;
-  cursor: default;
+}
+input:hover {
+  border: 1px solid #000;
+}
+input:focus,
+input:active {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #4e75ff;
+}
+
+input:disabled {
+  border: 1px solid #808080;
+  color: #808080;
+  background-color: #fafafa;
+  cursor: not-allowed;
+}
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timer {
+  display: flex;
+  gap: 24px;
+}
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  text-transform: uppercase;
 }
