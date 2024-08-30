@@ -1,0 +1,68 @@
+input[type='radio']:checked {
+  color: #007bff;
+  background-color: #007bff;
+}
+input[type='radio'] {
+  width: 32px;
+  display: inline;
+  margin: 0;
+}
+button[type='submit'] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+}
+button[type='submit']:hover {
+  background-color: #6c8cff;
+}
+input[type='number'] {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  display: block;
+}
+input[type='number'] {
+  margin-top: 8px;
+  width: 360px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+}
+input[type='number']:hover {
+  border: 1px solid #000;
+}
+input[type='number']:focus,
+input[type='number']:active {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #4e75ff;
+}
+
+fieldset {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-around;
+}
+fieldset:hover,
+fieldset:active {
+  border-color: #000;
+}

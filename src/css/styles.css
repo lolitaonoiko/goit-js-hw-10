@@ -1,4 +1,5 @@
 @import url('./timer.css');
+@import url('./snackbar.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -40,4 +41,9 @@ ul {
 }
 button {
   border: none;
+}
+a {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
