@@ -13,14 +13,8 @@ const executor = (resolve, reject) => {
   const delay = inputDelay.value;
   setTimeout(() => {
     if (radioFulfilled.checked) {
-      iziToast.success({
-        message: `✅ Fulfilled promise in ${delay}ms`,
-      });
       resolve(`✅ Fulfilled promise in ${delay}ms`);
     } else if (radioRejected.checked) {
-      iziToast.error({
-        message: `❌ Rejected promise in ${delay}ms`,
-      });
       reject(`❌ Rejected promise in ${delay}ms`);
     }
   }, delay);
@@ -32,10 +26,14 @@ function createPromise(event) {
 
   newPromis
     .then(result => {
-      console.log(result);
+      iziToast.success({
+        message: result,
+      });
     })
     .catch(err => {
-      console.log(err);
+      iziToast.error({
+        message: err,
+      });
     });
 }
 form.addEventListener('submit', createPromise);

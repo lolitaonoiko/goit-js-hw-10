@@ -38,6 +38,7 @@ class Timer {
   }
 
   validationDate() {
+    btnStart.disabled = false;
     userSelectedDate = new Date(inputArea.value);
     const dateInMs = userSelectedDate.getTime();
 
@@ -61,13 +62,12 @@ class Timer {
 
       if (intervalMSecs <= 0) {
         clearInterval(intervalId);
-        this.convertMs(0);
+        inputArea.disabled = false;
 
         iziToast.success({
           title: 'The timer has ended.',
           message: 'Please select the next date!',
         });
-        btnStart.disabled = true;
 
         return;
       } else {
@@ -113,7 +113,5 @@ class Timer {
 }
 
 const timer = new Timer();
-inputArea.addEventListener('blur', () => {
-  timer.validationDate();
-});
+
 btnStart.addEventListener('click', timer.startTimer.bind(timer));
